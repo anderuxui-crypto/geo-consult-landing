@@ -5,10 +5,10 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const navLinks = [
-        { name: 'Services', href: '#services' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'About', href: '#about' },
-        { name: 'Contact', href: '#contact' }
+        { name: 'Servicios', href: '#services' },
+        { name: 'Proyectos', href: '#projects' },
+        { name: 'Nosotros', href: '#about' },
+        { name: 'Contacto', href: '#contact' }
     ];
 
     return (
@@ -37,7 +37,7 @@ export default function Navbar() {
                             href="#contact"
                             className="bg-emerald-600 text-white px-6 py-2 rounded-md hover:bg-emerald-700 transition-colors duration-200"
                         >
-                            Get Started
+                            Comenzar
                         </a>
                     </div>
 
@@ -46,6 +46,7 @@ export default function Navbar() {
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
                             className="text-slate-700 hover:text-emerald-600"
+                            aria-label="Abrir menú"
                         >
                             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>
@@ -72,7 +73,7 @@ export default function Navbar() {
                             className="block bg-emerald-600 text-white px-3 py-2 rounded-md hover:bg-emerald-700 transition-colors duration-200 text-center"
                             onClick={() => setIsMenuOpen(false)}
                         >
-                            Get Started
+                            Comenzar
                         </a>
                     </div>
                 </div>

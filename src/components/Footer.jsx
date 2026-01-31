@@ -5,21 +5,21 @@ export default function Footer() {
 
     const footerLinks = {
         company: [
-            { name: 'About Us', href: '#about' },
-            { name: 'Services', href: '#services' },
-            { name: 'Projects', href: '#projects' },
-            { name: 'Contact', href: '#contact' }
+            { name: 'Nosotros', href: '#about' },
+            { name: 'Servicios', href: '#services' },
+            { name: 'Proyectos', href: '#projects' },
+            { name: 'Contacto', href: '#contact' }
         ],
         services: [
-            { name: 'Geological Mapping', href: '#services' },
-            { name: 'Mineral Exploration', href: '#services' },
-            { name: 'Impact Assessment', href: '#services' },
-            { name: 'Geotechnical Analysis', href: '#services' }
+            { name: 'Mapeo Geológico', href: '#services' },
+            { name: 'Exploración Mineral', href: '#services' },
+            { name: 'Evaluación de Impacto', href: '#services' },
+            { name: 'Análisis Geotécnico', href: '#services' }
         ],
         legal: [
-            { name: 'Privacy Policy', href: '#' },
-            { name: 'Terms of Service', href: '#' },
-            { name: 'Cookie Policy', href: '#' }
+            { name: 'Política de Privacidad', href: '#' },
+            { name: 'Términos de Servicio', href: '#' },
+            { name: 'Política de Cookies', href: '#' }
         ]
     };
 
@@ -40,7 +40,7 @@ export default function Footer() {
                             Geo<span className="text-emerald-600">Consult</span>
                         </div>
                         <p className="text-slate-400 mb-6">
-                            Expert geological consulting services for sustainable and innovative solutions.
+                            Servicios expertos de consultoría geológica para soluciones sostenibles e innovadoras.
                         </p>
                         <div className="flex space-x-4">
                             {socialLinks.map((social, index) => {
@@ -61,7 +61,7 @@ export default function Footer() {
 
                     {/* Company Links */}
                     <div>
-                        <h3 className="font-bold text-lg mb-4">Company</h3>
+                        <h3 className="font-bold text-lg mb-4">Empresa</h3>
                         <ul className="space-y-3">
                             {footerLinks.company.map((link, index) => (
                                 <li key={index}>
@@ -78,7 +78,7 @@ export default function Footer() {
 
                     {/* Services Links */}
                     <div>
-                        <h3 className="font-bold text-lg mb-4">Services</h3>
+                        <h3 className="font-bold text-lg mb-4">Servicios</h3>
                         <ul className="space-y-3">
                             {footerLinks.services.map((link, index) => (
                                 <li key={index}>
@@ -115,10 +115,10 @@ export default function Footer() {
                 <div className="border-t border-slate-800 pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                         <p className="text-slate-400 text-sm">
-                            © {currentYear} GeoConsult. All rights reserved.
+                            © {currentYear} GeoConsult. Todos los derechos reservados.
                         </p>
                         <p className="text-slate-400 text-sm">
-                            Designed with precision and expertise
+                            Diseñado con precisión y experiencia
                         </p>
                     </div>
                 </div>

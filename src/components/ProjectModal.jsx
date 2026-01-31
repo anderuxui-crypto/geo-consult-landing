@@ -44,14 +44,14 @@ export default function ProjectModal({ project, onClose }) {
 
                         <div>
                             <h4 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">
-                                Location
+                                Ubicación
                             </h4>
                             <p className="text-slate-900">{project.location}</p>
                         </div>
 
                         <div>
                             <h4 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">
-                                Description
+                                Descripción
                             </h4>
                             <p className="text-slate-600 leading-relaxed">{project.fullDescription}</p>
                         </div>
@@ -59,7 +59,7 @@ export default function ProjectModal({ project, onClose }) {
                         {project.details && (
                             <div>
                                 <h4 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">
-                                    Project Details
+                                    Detalles del Proyecto
                                 </h4>
                                 <ul className="space-y-2">
                                     {project.details.map((detail, index) => (

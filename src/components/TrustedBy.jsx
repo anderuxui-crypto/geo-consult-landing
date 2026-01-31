@@ -11,7 +11,7 @@ export default function TrustedBy() {
         <section className="bg-stone-50 py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h3 className="text-center text-slate-500 text-sm font-semibold uppercase tracking-wider mb-8">
-                    Trusted by Industry Leaders
+                    Confianza de Líderes de la Industria
                 </h3>
                 <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
                     {companies.map((company, index) => (

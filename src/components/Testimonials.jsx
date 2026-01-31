@@ -2,9 +2,9 @@ import { Star } from 'lucide-react';
 
 export default function Testimonials() {
     const testimonial = {
-        text: "An indispensable asset to our exploration team. The mapping accuracy and adherence to safety protocols were outstanding. Their expertise significantly contributed to our project success.",
+        text: "Un activo indispensable para nuestro equipo de exploración. La precisión del mapeo y el cumplimiento de los protocolos de seguridad fueron sobresalientes. Su experiencia contribuyó significativamente al éxito de nuestro proyecto.",
         author: "James Okaland",
-        position: "Exploration Manager",
+        position: "Gerente de Exploración",
         company: "MineralCorp International",
         rating: 5
     };

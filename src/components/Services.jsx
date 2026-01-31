@@ -4,23 +4,23 @@ export default function Services() {
     const services = [
         {
             icon: Map,
-            title: 'Geological Mapping',
-            description: 'Comprehensive geological mapping services using advanced GIS technology and field surveys to provide accurate subsurface analysis.'
+            title: 'Mapeo Geológico',
+            description: 'Servicios integrales de mapeo geológico utilizando tecnología GIS avanzada y estudios de campo para proporcionar análisis precisos del subsuelo.'
         },
         {
             icon: Compass,
-            title: 'Mineral Exploration',
-            description: 'Expert mineral exploration services combining geochemical analysis and geophysical surveys to identify potential mineral deposits.'
+            title: 'Exploración Mineral',
+            description: 'Servicios expertos de exploración mineral que combinan análisis geoquímico y estudios geofísicos para identificar depósitos minerales potenciales.'
         },
         {
             icon: FileText,
-            title: 'Impact Assessment',
-            description: 'Thorough environmental impact assessments ensuring compliance with regulations and sustainable project development.'
+            title: 'Evaluación de Impacto',
+            description: 'Evaluaciones exhaustivas de impacto ambiental que garantizan el cumplimiento de las regulaciones y el desarrollo sostenible de proyectos.'
         },
         {
             icon: Layers,
-            title: 'Geotechnical Analysis',
-            description: 'Detailed geotechnical investigations for construction projects, analyzing soil stability, foundation requirements, and site conditions.'
+            title: 'Análisis Geotécnico',
+            description: 'Investigaciones geotécnicas detalladas para proyectos de construcción, analizando estabilidad del suelo, requisitos de cimentación y condiciones del sitio.'
         }
     ];
 
@@ -29,10 +29,10 @@ export default function Services() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                        Core Services
+                        Servicios Principales
                     </h2>
                     <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                        Specialized geological consulting services tailored to your project needs
+                        Servicios especializados de consultoría geológica adaptados a las necesidades de su proyecto
                     </p>
                 </div>
 

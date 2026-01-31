@@ -8,47 +8,47 @@ export default function Projects() {
     const projects = [
         {
             id: 1,
-            title: 'Acros Mineral Survey',
-            category: 'Mineral Exploration',
-            location: 'Northern Territory, Australia',
+            title: 'Estudio Mineral Acros',
+            category: 'Exploración Mineral',
+            location: 'Territorio del Norte, Australia',
             image: 'https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=800&h=600&fit=crop',
-            description: 'Comprehensive mineral survey covering 50 square kilometers of unexplored terrain.',
-            fullDescription: 'A comprehensive geological survey project that involved detailed mapping and analysis of mineral deposits across 50 square kilometers in the Northern Territory. The project utilized advanced geophysical techniques and geochemical analysis to identify potential mining sites.',
+            description: 'Estudio mineral integral que cubre 50 kilómetros cuadrados de terreno inexplorado.',
+            fullDescription: 'Un proyecto integral de estudio geológico que involucró mapeo detallado y análisis de depósitos minerales en 50 kilómetros cuadrados en el Territorio del Norte. El proyecto utilizó técnicas geofísicas avanzadas y análisis geoquímico para identificar sitios mineros potenciales.',
             details: [
-                'Duration: 6 months',
-                'Team size: 12 geologists',
-                'Technologies: GIS mapping, geophysical surveys, core sampling',
-                'Outcome: Identified 3 high-potential mineral deposits'
+                'Duración: 6 meses',
+                'Tamaño del equipo: 12 geólogos',
+                'Tecnologías: Mapeo GIS, estudios geofísicos, muestreo de núcleos',
+                'Resultado: Identificados 3 depósitos minerales de alto potencial'
             ]
         },
         {
             id: 2,
-            title: 'Dharma Mine Project',
-            category: 'Geotechnical Analysis',
-            location: 'Western Australia',
+            title: 'Proyecto Mina Dharma',
+            category: 'Análisis Geotécnico',
+            location: 'Australia Occidental',
             image: 'https://images.unsplash.com/photo-1547619292-240402b5ae5d?w=800&h=600&fit=crop',
-            description: 'Detailed geotechnical assessment for open-pit mining operations.',
-            fullDescription: 'Extensive geotechnical investigation for a major open-pit mining operation. The project included slope stability analysis, groundwater assessment, and foundation design recommendations for heavy mining equipment.',
+            description: 'Evaluación geotécnica detallada para operaciones mineras a cielo abierto.',
+            fullDescription: 'Investigación geotécnica exhaustiva para una operación minera a cielo abierto de gran envergadura. El proyecto incluyó análisis de estabilidad de taludes, evaluación de aguas subterráneas y recomendaciones de diseño de cimentación para equipos mineros pesados.',
             details: [
-                'Duration: 8 months',
-                'Team size: 15 specialists',
-                'Technologies: 3D geological modeling, slope stability analysis',
-                'Outcome: Optimized mine design reducing costs by 20%'
+                'Duración: 8 meses',
+                'Tamaño del equipo: 15 especialistas',
+                'Tecnologías: Modelado geológico 3D, análisis de estabilidad de taludes',
+                'Resultado: Diseño de mina optimizado reduciendo costos en un 20%'
             ]
         },
         {
             id: 3,
-            title: 'RN1 Valley Assessment',
-            category: 'Environmental Impact',
+            title: 'Evaluación Valle RN1',
+            category: 'Impacto Ambiental',
             location: 'Queensland, Australia',
             image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop',
-            description: 'Environmental impact assessment for sustainable development project.',
-            fullDescription: 'Comprehensive environmental and geological impact assessment for a proposed infrastructure development in an ecologically sensitive valley region. The study evaluated soil stability, water resources, and environmental sustainability.',
+            description: 'Evaluación de impacto ambiental para proyecto de desarrollo sostenible.',
+            fullDescription: 'Evaluación integral de impacto ambiental y geológico para un desarrollo de infraestructura propuesto en una región de valle ecológicamente sensible. El estudio evaluó la estabilidad del suelo, recursos hídricos y sostenibilidad ambiental.',
             details: [
-                'Duration: 4 months',
-                'Team size: 8 environmental geologists',
-                'Technologies: Environmental modeling, soil analysis, hydrology studies',
-                'Outcome: Project approved with sustainable development recommendations'
+                'Duración: 4 meses',
+                'Tamaño del equipo: 8 geólogos ambientales',
+                'Tecnologías: Modelado ambiental, análisis de suelos, estudios hidrológicos',
+                'Resultado: Proyecto aprobado con recomendaciones de desarrollo sostenible'
             ]
         }
     ];
@@ -60,17 +60,17 @@ export default function Projects() {
                     <div className="flex justify-between items-end mb-12">
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                                Recent Fieldwork
+                                Trabajo de Campo Reciente
                             </h2>
                             <p className="text-lg text-slate-600">
-                                Explore our latest geological projects and discoveries
+                                Explore nuestros últimos proyectos geológicos y descubrimientos
                             </p>
                         </div>
                         <a
                             href="#contact"
                             className="hidden md:flex items-center text-emerald-600 hover:text-emerald-700 font-medium transition-colors"
                         >
-                            View All Projects
+                            Ver Todos los Proyectos
                             <ArrowRight className="ml-2" size={20} />
                         </a>
                     </div>

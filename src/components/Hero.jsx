@@ -1,3 +1,5 @@
+import heroImage from '../assets/geologo-portada.png';
+
 export default function Hero() {
     return (
         <section id="about" className="bg-gradient-to-br from-stone-50 to-emerald-50 py-16 md:py-24">
@@ -34,9 +36,9 @@ export default function Hero() {
                     <div className="relative">
                         <div className="rounded-2xl overflow-hidden shadow-2xl">
                             <img
-                                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop"
+                                src={heroImage}
                                 alt="Geólogo profesional examinando muestras de rocas"
-                                className="w-full h-auto object-cover"
+                                className="w-full h-full object-cover"
                             />
                         </div>
                         {/* Decorative Element */}

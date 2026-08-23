@@ -13,11 +13,11 @@ export default function ProjectModal({ project, onClose }) {
                 onClick={(e) => e.stopPropagation()}
             >
                 {/* Close Button */}
-                <div className="sticky top-0 bg-white border-b border-gray-200 p-4 flex justify-between items-center">
-                    <h3 className="text-2xl font-bold text-slate-900">{project.title}</h3>
+                <div className="sticky top-0 bg-white border-b border-white-custom p-4 flex justify-between items-center">
+                    <h3 className="text-h5 font-bold text-black-1">{project.title}</h3>
                     <button
                         onClick={onClose}
-                        className="text-slate-400 hover:text-slate-600 transition-colors"
+                        className="text-black-3 hover:text-black-2 transition-colors"
                     >
                         <X size={24} />
                     </button>
@@ -37,35 +37,35 @@ export default function ProjectModal({ project, onClose }) {
                     {/* Details */}
                     <div className="space-y-4">
                         <div>
-                            <span className="inline-block bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">
+                            <span className="inline-block bg-primary/10 text-primary px-3 py-1 rounded-full text-body-sm font-medium">
                                 {project.category}
                             </span>
                         </div>
 
                         <div>
-                            <h4 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">
+                            <h4 className="text-body-sm font-semibold text-black-3 uppercase tracking-wider mb-2">
                                 Ubicación
                             </h4>
-                            <p className="text-slate-900">{project.location}</p>
+                            <p className="text-body-normal text-black-1">{project.location}</p>
                         </div>
 
                         <div>
-                            <h4 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">
+                            <h4 className="text-body-sm font-semibold text-black-3 uppercase tracking-wider mb-2">
                                 Descripción
                             </h4>
-                            <p className="text-slate-600 leading-relaxed">{project.fullDescription}</p>
+                            <p className="text-body-normal text-black-3">{project.fullDescription}</p>
                         </div>
 
                         {project.details && (
                             <div>
-                                <h4 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-2">
+                                <h4 className="text-body-sm font-semibold text-black-3 uppercase tracking-wider mb-2">
                                     Detalles del Proyecto
                                 </h4>
                                 <ul className="space-y-2">
                                     {project.details.map((detail, index) => (
                                         <li key={index} className="flex items-start">
-                                            <span className="text-emerald-600 mr-2">•</span>
-                                            <span className="text-slate-600">{detail}</span>
+                                            <span className="text-primary mr-2">•</span>
+                                            <span className="text-body-normal text-black-3">{detail}</span>
                                         </li>
                                     ))}
                                 </ul>

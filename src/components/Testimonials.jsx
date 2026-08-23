@@ -12,7 +12,7 @@ export default function Testimonials() {
     return (
         <section className="bg-white py-16 md:py-24">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 md:p-12 shadow-2xl">
+                <div className="bg-gradient-to-br from-black-2 to-black-1 rounded-2xl p-8 md:p-12 shadow-2xl">
                     {/* Stars */}
                     <div className="flex justify-center mb-6">
                         {[...Array(testimonial.rating)].map((_, index) => (
@@ -25,21 +25,21 @@ export default function Testimonials() {
 
                     {/* Quote */}
                     <blockquote className="text-center mb-8">
-                        <p className="text-xl md:text-2xl text-white leading-relaxed italic">
+                        <p className="text-body-lg text-white-custom italic">
                             "{testimonial.text}"
                         </p>
                     </blockquote>
 
                     {/* Author */}
                     <div className="flex items-center justify-center space-x-4">
-                        <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center">
-                            <span className="text-white font-bold text-lg">
+                        <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                            <span className="text-white font-bold text-body-md">
                                 {testimonial.author.charAt(0)}
                             </span>
                         </div>
                         <div className="text-left">
-                            <div className="text-white font-bold">{testimonial.author}</div>
-                            <div className="text-slate-300 text-sm">
+                            <div className="text-white font-bold text-body-normal">{testimonial.author}</div>
+                            <div className="text-white-custom/80 text-body-sm">
                                 {testimonial.position}, {testimonial.company}
                             </div>
                         </div>

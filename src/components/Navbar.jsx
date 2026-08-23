@@ -17,35 +17,35 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <div className="flex items-center">
-                        <span className="text-2xl font-bold text-slate-900">
-                            Geo<span className="text-emerald-600">Consult</span>
+                        <span className="text-h5 font-bold text-black-1">
+                            Geo<span className="text-primary">Consult</span>
                         </span>
                     </div>
-
+ 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
                         {navLinks.map((link) => (
                             <a
                                 key={link.name}
                                 href={link.href}
-                                className="text-slate-700 hover:text-emerald-600 transition-colors duration-200"
+                                className="text-body-normal font-medium text-black-2 hover:text-primary transition-colors duration-200"
                             >
                                 {link.name}
                             </a>
                         ))}
                         <a
                             href="#contact"
-                            className="bg-emerald-600 text-white px-6 py-2 rounded-md hover:bg-emerald-700 transition-colors duration-200"
+                            className="bg-primary text-white px-6 py-2 rounded-md hover:bg-secondary transition-colors duration-200"
                         >
                             Comenzar
                         </a>
                     </div>
-
+ 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden">
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className="text-slate-700 hover:text-emerald-600"
+                            className="text-black-2 hover:text-primary"
                             aria-label="Abrir menú"
                         >
                             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -53,16 +53,16 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-
+ 
             {/* Mobile Menu */}
             {isMenuOpen && (
-                <div className="md:hidden bg-white border-t border-gray-200">
+                <div className="md:hidden bg-white border-t border-white-custom">
                     <div className="px-4 pt-2 pb-4 space-y-2">
                         {navLinks.map((link) => (
                             <a
                                 key={link.name}
                                 href={link.href}
-                                className="block px-3 py-2 text-slate-700 hover:text-emerald-600 hover:bg-stone-50 rounded-md transition-colors duration-200"
+                                className="block px-3 py-2 text-body-normal text-black-2 hover:text-primary hover:bg-white-custom rounded-md transition-colors duration-200"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {link.name}
@@ -70,7 +70,7 @@ export default function Navbar() {
                         ))}
                         <a
                             href="#contact"
-                            className="block bg-emerald-600 text-white px-3 py-2 rounded-md hover:bg-emerald-700 transition-colors duration-200 text-center"
+                            className="block bg-primary text-white px-3 py-2 rounded-md hover:bg-secondary transition-colors duration-200 text-center"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Comenzar

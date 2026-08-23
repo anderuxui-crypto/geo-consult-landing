@@ -2,30 +2,28 @@ import heroImage from '../assets/geologo-portada.png';
 
 export default function Hero() {
     return (
-        <section id="about" className="bg-gradient-to-br from-stone-50 to-emerald-50 py-16 md:py-24">
+        <section id="about" className="bg-gradient-to-br from-white to-white-custom py-16 md:py-24">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div className="space-y-6">
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
-                            Descubriendo Soluciones a través de la{' '}
-                            <span className="text-emerald-600">Ciencia Geológica</span>
+                        <h1 className="text-h3 md:text-h2 lg:text-h1 font-bold text-black-1">
+                            Geógrafo aportando conocimiento para{' '}
+                            <span className="text-primary">el desarrollo territorial</span>
                         </h1>
-                        <p className="text-lg text-slate-600 leading-relaxed">
-                            Brindamos servicios expertos de consultoría geológica para los sectores de
-                            minería, construcción y medio ambiente. Nuestro equipo ofrece análisis precisos
-                            y soluciones sostenibles para todas sus necesidades geológicas.
+                        <p className="text-body-md text-black-3">
+                            "Más de 10 años de experiencia transformando datos geoespaciales en soluciones estratégicas para el sector público y privado. Optimizamos la planificación territorial y urbana integrando Fotogrametría, Catastro e Inteligencia Artificial para resultados rápidos y precisos."
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <a
                                 href="#contact"
-                                className="bg-emerald-600 text-white px-8 py-3 rounded-md hover:bg-emerald-700 transition-colors duration-200 text-center font-medium"
+                                className="bg-primary text-white px-8 py-3 rounded-md hover:bg-secondary transition-colors duration-200 text-center font-medium"
                             >
                                 Contáctanos
                             </a>
                             <a
                                 href="#services"
-                                className="border-2 border-emerald-600 text-emerald-600 px-8 py-3 rounded-md hover:bg-emerald-50 transition-colors duration-200 text-center font-medium"
+                                className="border-2 border-primary text-primary px-8 py-3 rounded-md hover:bg-white-custom transition-colors duration-200 text-center font-medium"
                             >
                                 Nuestros Servicios
                             </a>
@@ -42,7 +40,7 @@ export default function Hero() {
                             />
                         </div>
                         {/* Decorative Element */}
-                        <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-emerald-600 rounded-full opacity-20 blur-3xl -z-10"></div>
+                        <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary rounded-full opacity-20 blur-3xl -z-10"></div>
                     </div>
                 </div>
             </div>

@@ -8,16 +8,16 @@ export default function TrustedBy() {
     ];
 
     return (
-        <section className="bg-stone-50 py-12">
+        <section className="bg-white-custom py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h3 className="text-center text-slate-500 text-sm font-semibold uppercase tracking-wider mb-8">
+                <h3 className="text-center text-black-3 text-body-sm font-semibold uppercase tracking-wider mb-8">
                     Confianza de Líderes de la Industria
                 </h3>
                 <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
                     {companies.map((company, index) => (
                         <div
                             key={index}
-                            className="text-slate-400 text-xl md:text-2xl font-bold hover:text-emerald-600 transition-colors duration-200"
+                            className="text-black-3/60 text-body-lg md:text-h5 font-bold hover:text-primary transition-colors duration-200"
                         >
                             {company}
                         </div>

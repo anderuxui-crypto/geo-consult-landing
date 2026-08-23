@@ -55,20 +55,20 @@ export default function Projects() {
 
     return (
         <>
-            <section id="projects" className="bg-stone-50 py-16 md:py-24">
+            <section id="projects" className="bg-white-custom py-16 md:py-24">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-end mb-12">
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                            <h2 className="text-h3 md:text-h2 font-bold text-black-1 mb-4">
                                 Trabajo de Campo Reciente
                             </h2>
-                            <p className="text-lg text-slate-600">
+                            <p className="text-body-md text-black-3">
                                 Explore nuestros últimos proyectos geológicos y descubrimientos
                             </p>
                         </div>
                         <a
                             href="#contact"
-                            className="hidden md:flex items-center text-emerald-600 hover:text-emerald-700 font-medium transition-colors"
+                            className="hidden md:flex items-center text-primary hover:text-secondary font-medium transition-colors"
                         >
                             Ver Todos los Proyectos
                             <ArrowRight className="ml-2" size={20} />
@@ -83,7 +83,7 @@ export default function Projects() {
                                 className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer group"
                             >
                                 <div className="relative overflow-hidden">
-                                    <span className="absolute top-4 left-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-medium z-10">
+                                    <span className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-body-sm font-medium z-10">
                                         {project.category}
                                     </span>
                                     <img
@@ -93,11 +93,11 @@ export default function Projects() {
                                     />
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition-colors">
+                                    <h3 className="text-h5 font-bold text-black-1 mb-2 group-hover:text-primary transition-colors">
                                         {project.title}
                                     </h3>
-                                    <p className="text-sm text-slate-500 mb-3">{project.location}</p>
-                                    <p className="text-slate-600 line-clamp-2">{project.description}</p>
+                                    <p className="text-body-sm text-black-3 mb-3">{project.location}</p>
+                                    <p className="text-body-normal text-black-3 line-clamp-2">{project.description}</p>
                                 </div>
                             </div>
                         ))}
@@ -106,7 +106,7 @@ export default function Projects() {
                     <div className="md:hidden mt-8 text-center">
                         <a
                             href="#contact"
-                            className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium transition-colors"
+                            className="inline-flex items-center text-primary hover:text-secondary font-medium transition-colors"
                         >
                             View All Projects
                             <ArrowRight className="ml-2" size={20} />

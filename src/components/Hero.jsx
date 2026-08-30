@@ -12,20 +12,20 @@ export default function Hero() {
                             <span className="text-primary">el desarrollo territorial</span>
                         </h1>
                         <p className="text-body-md text-black-3">
-                            "Más de 10 años de experiencia transformando datos geoespaciales en soluciones estratégicas para el sector público y privado. Optimizamos la planificación territorial y urbana integrando Fotogrametría, Catastro e Inteligencia Artificial para resultados rápidos y precisos."
+                            "Más de 10 años de experiencia transformando datos geoespaciales en soluciones estratégicas para el sector público y privado. Optimizo la planificación territorial y urbana integrando Fotogrametría, Catastro e Inteligencia Artificial para resultados rápidos y precisos."
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <a
                                 href="#contact"
                                 className="bg-primary text-white px-8 py-3 rounded-md hover:bg-secondary transition-colors duration-200 text-center font-medium"
                             >
-                                Contáctanos
+                                Hablemos
                             </a>
                             <a
                                 href="#services"
                                 className="border-2 border-primary text-primary px-8 py-3 rounded-md hover:bg-white-custom transition-colors duration-200 text-center font-medium"
                             >
-                                Nuestros Servicios
+                                Cómo puedo ayudarte
                             </a>
                         </div>
                     </div>

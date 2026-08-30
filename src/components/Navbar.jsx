@@ -18,10 +18,10 @@ export default function Navbar() {
                     {/* Logo */}
                     <div className="flex items-center">
                         <span className="text-h5 font-bold text-black-1">
-                            Geo<span className="text-primary">Consult</span>
+                            Ronald Orellana<span className="text-primary"> | Geógrafo</span>
                         </span>
                     </div>
- 
+
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
                         {navLinks.map((link) => (
@@ -37,10 +37,10 @@ export default function Navbar() {
                             href="#contact"
                             className="bg-primary text-white px-6 py-2 rounded-md hover:bg-secondary transition-colors duration-200"
                         >
-                            Comenzar
+                            Contáctame
                         </a>
                     </div>
- 
+
                     {/* Mobile Menu Button */}
                     <div className="md:hidden">
                         <button
@@ -53,7 +53,7 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
- 
+
             {/* Mobile Menu */}
             {isMenuOpen && (
                 <div className="md:hidden bg-white border-t border-white-custom">
@@ -73,7 +73,7 @@ export default function Navbar() {
                             className="block bg-primary text-white px-3 py-2 rounded-md hover:bg-secondary transition-colors duration-200 text-center"
                             onClick={() => setIsMenuOpen(false)}
                         >
-                            Comenzar
+                            Contáctame
                         </a>
                     </div>
                 </div>

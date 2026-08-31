@@ -7,8 +7,8 @@ export default function Navbar() {
     const navLinks = [
         { name: 'Servicios', href: '#services' },
         { name: 'Proyectos', href: '#projects' },
-        { name: 'Nosotros', href: '#about' },
-        { name: 'Contacto', href: '#contact' }
+        { name: 'Tecnología', href: '#technology' },
+        { name: 'Testimonios', href: '#testimonials' }
     ];
 
     return (

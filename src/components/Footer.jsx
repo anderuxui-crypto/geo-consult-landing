@@ -1,126 +1,56 @@
-import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Linkedin, Github } from 'lucide-react';
 
 export default function Footer() {
-    const currentYear = new Date().getFullYear();
-
-    const footerLinks = {
-        company: [
-            { name: 'Nosotros', href: '#about' },
-            { name: 'Servicios', href: '#services' },
-            { name: 'Proyectos', href: '#projects' },
-            { name: 'Contacto', href: '#contact' }
-        ],
-        services: [
-            { name: 'Mapeo Geológico', href: '#services' },
-            { name: 'Exploración Mineral', href: '#services' },
-            { name: 'Evaluación de Impacto', href: '#services' },
-            { name: 'Análisis Geotécnico', href: '#services' }
-        ],
-        legal: [
-            { name: 'Política de Privacidad', href: '#' },
-            { name: 'Términos de Servicio', href: '#' },
-            { name: 'Política de Cookies', href: '#' }
-        ]
-    };
-
-    const socialLinks = [
-        { icon: Facebook, href: '#', label: 'Facebook' },
-        { icon: Twitter, href: '#', label: 'Twitter' },
-        { icon: Linkedin, href: 'https://www.linkedin.com/in/rjjosgunmsm/', label: 'LinkedIn' },
-        { icon: Instagram, href: '#', label: 'Instagram' }
-    ];
-
     return (
-        <footer className="bg-black-1 text-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-                    {/* Brand */}
-                    <div className="lg:col-span-1">
-                        <div className="text-h5 font-bold mb-4">
-                            Geo<span className="text-primary">Consult</span>
-                        </div>
-                        <p className="text-white-custom/70 mb-6 text-body-normal">
-                            Servicios expertos de consultoría geológica para soluciones sostenibles e innovadoras.
-                        </p>
-                        <div className="flex space-x-4">
-                            {socialLinks.map((social, index) => {
-                                const Icon = social.icon;
-                                return (
-                                    <a
-                                        key={index}
-                                        href={social.href}
-                                        aria-label={social.label}
-                                        className="w-10 h-10 bg-black-2 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-200"
-                                    >
-                                        <Icon size={20} />
-                                    </a>
-                                );
-                            })}
-                        </div>
-                    </div>
-
-                    {/* Company Links */}
-                    <div>
-                        <h3 className="font-bold text-body-md mb-4 text-white">Empresa</h3>
-                        <ul className="space-y-3">
-                            {footerLinks.company.map((link, index) => (
-                                <li key={index}>
-                                    <a
-                                        href={link.href}
-                                        className="text-white-custom/70 hover:text-primary text-body-normal transition-colors duration-200"
-                                    >
-                                        {link.name}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Services Links */}
-                    <div>
-                        <h3 className="font-bold text-body-md mb-4 text-white">Servicios</h3>
-                        <ul className="space-y-3">
-                            {footerLinks.services.map((link, index) => (
-                                <li key={index}>
-                                    <a
-                                        href={link.href}
-                                        className="text-white-custom/70 hover:text-primary text-body-normal transition-colors duration-200"
-                                    >
-                                        {link.name}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Legal Links */}
-                    <div>
-                        <h3 className="font-bold text-body-md mb-4 text-white">Legal</h3>
-                        <ul className="space-y-3">
-                            {footerLinks.legal.map((link, index) => (
-                                <li key={index}>
-                                    <a
-                                        href={link.href}
-                                        className="text-white-custom/70 hover:text-primary text-body-normal transition-colors duration-200"
-                                    >
-                                        {link.name}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
+        <footer className="bg-[#111827] pt-20 pb-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                {/* Top Section */}
+                <div className="text-center mb-16">
+                    <h2 className="text-white text-3xl md:text-4xl font-bold mb-6">
+                        ¿Listo para optimizar los datos territoriales de tu proyecto?
+                    </h2>
+                    <div className="flex items-center justify-center space-x-2">
+                        <Mail className="w-5 h-5 text-primary" />
+                        <a href="mailto:contacto@geoconsult.com" className="text-white hover:text-primary transition-colors text-lg font-medium">
+                            contacto@geoconsult.com
+                        </a>
                     </div>
                 </div>
 
-                {/* Bottom Bar */}
-                <div className="border-t border-black-2 pt-8">
-                    <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                        <p className="text-white-custom/60 text-body-sm">
-                            © {currentYear} GeoConsult. Todos los derechos reservados.
-                        </p>
-                        <p className="text-white-custom/60 text-body-sm">
-                            Diseñado con precisión y experiencia
-                        </p>
+                {/* Middle Section */}
+                <div className="border-t border-[#1f2937] pt-10 pb-10 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+                    {/* Brand */}
+                    <div className="flex items-center space-x-3">
+                        <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <span className="text-white font-bold text-lg leading-none">RJ</span>
+                        </div>
+                        <span className="text-white font-bold text-lg">Ronald Orellana</span>
                     </div>
+
+                    {/* Navigation */}
+                    <nav className="flex flex-wrap justify-center gap-6 md:gap-8">
+                        <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">Inicio</a>
+                        <a href="#services" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">Servicios</a>
+                        <a href="#technology" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">Tecnología</a>
+                        <a href="#projects" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">Proyectos</a>
+                        <a href="#testimonials" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">Testimonios</a>
+                    </nav>
+
+                    {/* Socials */}
+                    <div className="flex items-center space-x-5">
+                        <a href="https://www.linkedin.com/in/rjjosgunmsm/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary transition-colors">
+                            <Linkedin className="w-5 h-5" />
+                        </a>
+                        <a href="#" className="text-gray-400 hover:text-primary transition-colors">
+                            <Github className="w-5 h-5" />
+                        </a>
+                    </div>
+                </div>
+
+                {/* Bottom Section */}
+                <div className="border-t border-[#1f2937] pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
+                    <p>© 2026 Ronald Orellana. Todos los derechos reservados.</p>
+                    <p className="mt-2 md:mt-0">Diseñado con precisión y experiencia</p>
                 </div>
             </div>
         </footer>

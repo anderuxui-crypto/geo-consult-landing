@@ -8,47 +8,28 @@ export default function Projects() {
     const projects = [
         {
             id: 1,
-            title: 'Estudio Mineral Acros',
-            category: 'Exploración Mineral',
-            location: 'Territorio del Norte, Australia',
-            image: 'https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=800&h=600&fit=crop',
-            description: 'Estudio mineral integral que cubre 50 kilómetros cuadrados de terreno inexplorado.',
-            fullDescription: 'Un proyecto integral de estudio geológico que involucró mapeo detallado y análisis de depósitos minerales en 50 kilómetros cuadrados en el Territorio del Norte. El proyecto utilizó técnicas geofísicas avanzadas y análisis geoquímico para identificar sitios mineros potenciales.',
-            details: [
-                'Duración: 6 meses',
-                'Tamaño del equipo: 12 geólogos',
-                'Tecnologías: Mapeo GIS, estudios geofísicos, muestreo de núcleos',
-                'Resultado: Identificados 3 depósitos minerales de alto potencial'
+            title: "Elaboración, sistematización y estandarización del mapa zonificación urbana de la provincia de Cusco.",
+            category: "Exploración Mineral", 
+            location: "Perú",
+            shortDescription: "Establece reglas claras de zonificación para un desarrollo urbano ordenado, seguro y respetuoso del patrimonio cultural en la provincia de Cusco.",
+            fullDescription: "Resuelve el desordenado crecimiento de la ciudad al establecer reglas claras sobre qué usos y actividades (residencial, comercial, industrial, protección patrimonial y ambiental) se permiten en cada zona, evitando conflictos entre usos incompatibles; protege el patrimonio histórico regulando alturas, materiales e intervenciones en el territorio diagnosticado; identifica áreas de riesgo geológico no aptas para construcción, dado el relieve andino de la región; brinda seguridad jurídica para licencias, subdivisiones de predios e inversión inmobiliaria; y orienta la inversión pública en infraestructura y servicios según la vocación de cada sector, garantizando así un desarrollo urbano ordenado, seguro y respetuoso del patrimonio cultural.",
+            images: [
+                { url: "/MP-FE-01 MAPA DE CLASIFICACIÓN GENERAL DEL SUELO (1).jpg", title: "Mapa de Clasificación General del Suelo" },
+                { url: "/MP-FE-02 MAPA DE SUBCLASIFICACION DE SUELO.jpg", title: "Mapa de Subclasificación de Suelo" },
+                { url: "/MP-FE-03 MAPA DE ZONIFICACIÓN.jpg", title: "Mapa de Zonificación" }
             ]
         },
         {
             id: 2,
             title: 'Proyecto Mina Dharma',
             category: 'Análisis Geotécnico',
-            location: 'Australia Occidental',
-            image: 'https://images.unsplash.com/photo-1547619292-240402b5ae5d?w=800&h=600&fit=crop',
-            description: 'Evaluación geotécnica detallada para operaciones mineras a cielo abierto.',
+            location: 'Perú',
+            shortDescription: 'Evaluación geotécnica detallada para operaciones mineras a cielo abierto.',
             fullDescription: 'Investigación geotécnica exhaustiva para una operación minera a cielo abierto de gran envergadura. El proyecto incluyó análisis de estabilidad de taludes, evaluación de aguas subterráneas y recomendaciones de diseño de cimentación para equipos mineros pesados.',
-            details: [
-                'Duración: 8 meses',
-                'Tamaño del equipo: 15 especialistas',
-                'Tecnologías: Modelado geológico 3D, análisis de estabilidad de taludes',
-                'Resultado: Diseño de mina optimizado reduciendo costos en un 20%'
-            ]
-        },
-        {
-            id: 3,
-            title: 'Evaluación Valle RN1',
-            category: 'Impacto Ambiental',
-            location: 'Queensland, Australia',
-            image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop',
-            description: 'Evaluación de impacto ambiental para proyecto de desarrollo sostenible.',
-            fullDescription: 'Evaluación integral de impacto ambiental y geológico para un desarrollo de infraestructura propuesto en una región de valle ecológicamente sensible. El estudio evaluó la estabilidad del suelo, recursos hídricos y sostenibilidad ambiental.',
-            details: [
-                'Duración: 4 meses',
-                'Tamaño del equipo: 8 geólogos ambientales',
-                'Tecnologías: Modelado ambiental, análisis de suelos, estudios hidrológicos',
-                'Resultado: Proyecto aprobado con recomendaciones de desarrollo sostenible'
+            images: [
+                { url: 'https://images.unsplash.com/photo-1547619292-240402b5ae5d?w=800&h=600&fit=crop', title: 'Vista general de la mina' },
+                { url: 'https://images.unsplash.com/photo-1579782522718-490b4d0089e9?w=800&h=600&fit=crop', title: 'Análisis de taludes' },
+                { url: 'https://images.unsplash.com/photo-1582270921960-95112f45c48b?w=800&h=600&fit=crop', title: 'Muestreo de núcleos' }
             ]
         }
     ];
@@ -75,7 +56,7 @@ export default function Projects() {
                         </a>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {projects.map((project) => (
                             <div
                                 key={project.id}
@@ -87,7 +68,7 @@ export default function Projects() {
                                         {project.category}
                                     </span>
                                     <img
-                                        src={project.image}
+                                        src={encodeURI(project.images[0].url)}
                                         alt={project.title}
                                         className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
                                     />
@@ -97,7 +78,7 @@ export default function Projects() {
                                         {project.title}
                                     </h3>
                                     <p className="text-body-sm text-black-3 mb-3">{project.location}</p>
-                                    <p className="text-body-normal text-black-3 line-clamp-2">{project.description}</p>
+                                    <p className="text-body-normal text-black-3 line-clamp-2">{project.shortDescription}</p>
                                 </div>
                             </div>
                         ))}

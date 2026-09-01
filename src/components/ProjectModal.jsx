@@ -25,15 +25,6 @@ export default function ProjectModal({ project, onClose }) {
 
                 {/* Content */}
                 <div className="p-6 space-y-6">
-                    {/* Image */}
-                    <div className="rounded-xl overflow-hidden">
-                        <img
-                            src={project.image}
-                            alt={project.title}
-                            className="w-full h-auto object-cover"
-                        />
-                    </div>
-
                     {/* Details */}
                     <div className="space-y-4">
                         <div>
@@ -56,22 +47,26 @@ export default function ProjectModal({ project, onClose }) {
                             <p className="text-body-normal text-black-3">{project.fullDescription}</p>
                         </div>
 
-                        {project.details && (
-                            <div>
-                                <h4 className="text-body-sm font-semibold text-black-3 uppercase tracking-wider mb-2">
-                                    Detalles del Proyecto
-                                </h4>
-                                <ul className="space-y-2">
-                                    {project.details.map((detail, index) => (
-                                        <li key={index} className="flex items-start">
-                                            <span className="text-primary mr-2">•</span>
-                                            <span className="text-body-normal text-black-3">{detail}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        )}
+
                     </div>
+
+                    {/* Image Gallery */}
+                    {project.images && project.images.length > 0 && (
+                        <div className="flex flex-col gap-6 mt-6">
+                            {project.images.map((imgObj, index) => (
+                                <div key={index} className="flex flex-col mb-6">
+                                    <h5 className="text-sm font-semibold text-slate-800 mb-2">
+                                        {imgObj.title}
+                                    </h5>
+                                    <img
+                                        src={encodeURI(imgObj.url)}
+                                        alt={imgObj.title}
+                                        className="w-full h-auto object-contain rounded-lg"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

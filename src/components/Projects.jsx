@@ -14,9 +14,9 @@ export default function Projects() {
             shortDescription: "Establece reglas claras de zonificación para un desarrollo urbano ordenado, seguro y respetuoso del patrimonio cultural en la provincia de Cusco.",
             fullDescription: "Resuelve el desordenado crecimiento de la ciudad al establecer reglas claras sobre qué usos y actividades (residencial, comercial, industrial, protección patrimonial y ambiental) se permiten en cada zona, evitando conflictos entre usos incompatibles; protege el patrimonio histórico regulando alturas, materiales e intervenciones en el territorio diagnosticado; identifica áreas de riesgo geológico no aptas para construcción, dado el relieve andino de la región; brinda seguridad jurídica para licencias, subdivisiones de predios e inversión inmobiliaria; y orienta la inversión pública en infraestructura y servicios según la vocación de cada sector, garantizando así un desarrollo urbano ordenado, seguro y respetuoso del patrimonio cultural.",
             images: [
-                { url: "/MP-FE-01 MAPA DE CLASIFICACIÓN GENERAL DEL SUELO (1).jpg", title: "Mapa de Clasificación General del Suelo" },
-                { url: "/MP-FE-02 MAPA DE SUBCLASIFICACION DE SUELO.jpg", title: "Mapa de Subclasificación de Suelo" },
-                { url: "/MP-FE-03 MAPA DE ZONIFICACIÓN.jpg", title: "Mapa de Zonificación" }
+                { url: "/mp-fe-01-mapa-de-clasificacion-general-del-suelo-1.jpg", title: "Mapa de Clasificación General del Suelo" },
+                { url: "/mp-fe-02-mapa-de-subclasificacion-de-suelo.jpg", title: "Mapa de Subclasificación de Suelo" },
+                { url: "/mp-fe-03-mapa-de-zonificacion.jpg", title: "Mapa de Zonificación" }
             ]
         },
         {
@@ -61,19 +61,23 @@ export default function Projects() {
                             <div
                                 key={project.id}
                                 onClick={() => setSelectedProject(project)}
-                                className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer group"
+                                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer group flex flex-col overflow-hidden"
                             >
-                                <div className="relative overflow-hidden">
-                                    <span className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-body-sm font-medium z-10">
-                                        {project.category}
-                                    </span>
-                                    <img
-                                        src={encodeURI(project.images[0].url)}
-                                        alt={project.title}
-                                        className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
-                                    />
+                                <div className="pt-5 px-5">
+                                    <div className="overflow-hidden rounded-lg">
+                                        <img
+                                            src={project.images[0].url}
+                                            alt={project.title}
+                                            className="w-full h-48 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+                                        />
+                                    </div>
                                 </div>
-                                <div className="p-6">
+                                <div className="p-6 flex flex-col flex-grow">
+                                    <div className="mb-3">
+                                        <span className="inline-block bg-primary text-white px-3 py-1 rounded-full text-body-sm font-medium">
+                                            {project.category}
+                                        </span>
+                                    </div>
                                     <h3 className="text-h5 font-bold text-black-1 mb-2 group-hover:text-primary transition-colors">
                                         {project.title}
                                     </h3>

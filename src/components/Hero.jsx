@@ -8,8 +8,8 @@ export default function Hero() {
                     {/* Left Content */}
                     <div className="space-y-6">
                         <h1 className="text-h3 md:text-h2 lg:text-h1 font-bold text-black-1">
-                            Geógrafo aportando conocimiento para{' '}
-                            <span className="text-primary">el desarrollo territorial</span>
+                            Geógrafo aportando conocimiento para el{' '}
+                            <span className="text-primary">desarrollo territorial</span>
                         </h1>
                         <p className="text-body-md text-black-3">
                             "Más de 10 años de experiencia transformando datos geoespaciales en soluciones estratégicas para el sector público y privado. Optimizo la planificación territorial y urbana integrando Fotogrametría, Catastro e Inteligencia Artificial para resultados rápidos y precisos."
